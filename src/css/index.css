@@ -13,6 +13,8 @@ body {
   max-width: 900px;
 
   display: grid;
+  justify-content: center;
+  align-items: center;
   grid-template-areas: "area-daniel area-daniel area-jonathan area-kira"
                        "area-jeanette area-patrick area-patrick area-kira";
   grid-template-columns: repeat(4, 1fr);
@@ -53,6 +55,7 @@ body {
 
 .testimonial {
   padding: 15px;
+  border-radius: 10px;
 }
 
 .witness-information .user-photo, .witness-information .pattern {
