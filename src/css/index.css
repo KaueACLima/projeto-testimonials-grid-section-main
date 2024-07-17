@@ -22,11 +22,17 @@ body {
   gap: 1em;
 }
 
-@media (max-width: 576px) {
+@media (max-width: 425px) {
   .testimonials-content {
-      grid-template-columns: 1fr;
-      grid-template-rows: repeat(5, 1fr); 
-  }
+    grid-template-areas:
+        "area-daniel"
+        "area-jeanette"
+        "area-jonathan"
+        "area-patrick"
+        "area-kira";
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5, 1fr);
+}
 }
 
 .area-daniel {
