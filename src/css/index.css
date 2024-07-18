@@ -11,15 +11,26 @@ body {
 .testimonials-content {
   max-width: 900px;
   margin: 5% auto;
+
   display: grid;
-  justify-content: center;
-  align-content: center;
   grid-template-areas:
     "area-daniel area-daniel area-jonathan area-kira"
     "area-jeanette area-patrick area-patrick area-kira";
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: 200px 1fr;
   gap: 1em;
+}
+
+@media(max-width: 768px){
+  body{
+    padding: 30px;
+  }
+  .testimonials-content{
+    grid-template-areas: "area-daniel area-jonathan area-kira"
+                         "area-jeanette area-patrick area-kira";
+      grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+  }
 }
 
 @media (max-width: 425px) {
@@ -122,6 +133,12 @@ body {
 .witness-information .user-photo {
   border-radius: 50%;
   border: 1px solid var(--white);
+}
+
+.witness-information .information .name-witness,
+.witness-information .information .graduate {
+  font-size: 0.8em;
+  font-weight: 500;
 }
 
 .attribution {
